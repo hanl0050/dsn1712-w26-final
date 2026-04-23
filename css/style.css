@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.027rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.802rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.266rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.167rem;
+    color: #000;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.image-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.image-layout img:first-child {
+    grid-column: 1/ span 3;
+}
+
+.product-info h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.flavour-subtext {
+    font-size: 1.2rem;
+    margin-top: -1em; 
+    color: #000;
+}
+
+.price {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.product-description {
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.Add-to-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.behind-the-dough {
+    background-color: #f8fafc;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.story-grid {
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.quotes {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.quote-grid {
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.quote-text p {
+    font-size: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.quote-text cite {
+    display: block;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.upsell {
+    /* background-color: aqua; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;   
+}
+
+.upsell-grid {
+    /* background-color: pink; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.upsell-item h3 {
+    text-align: center;
+    background-color: #f8fafc;
+    padding: 10px;
+}
+
+.upsell-item p {
+    text-align: center;
+    background-color: #f8fafc;
+    padding: 10px;
+}
+
+
+
+
+.main-footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.75rem;
+}
