@@ -19,6 +19,7 @@ body {
 
 img {
     width: 100%;
+    display: block;
 }
 
 .logo {
@@ -165,11 +166,10 @@ p {
     color: #fff;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .upsell {
-    /* background-color: aqua; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;   
@@ -194,13 +194,77 @@ p {
     padding: 10px;
 }
 
-
-
-
 .main-footer {
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px;
     font-size: 0.75rem;
+}
+
+
+@media (min-width: 768px) {
+
+    .image-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+    }
+    .image-layout img:first-child {
+        grid-column: span 1;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 0;
+    }
+
+    .quote-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px 
+    }
+
+    .upsell-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 960px){
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 60px;
+        padding: 40px 20px;
+    }
+
+    .logo {
+        width: 275px;
+    }
+
+    .image-layout {
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .product-grid {
+        gap: 25px;
+    }
+
+    .quote-grid {
+        gap: 60px;
+    }
+
 }
